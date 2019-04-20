@@ -1,0 +1,48 @@
+
+.header {
+
+    height          : 130px;
+    width           : 100%;
+    background-image: url(../images/navbgImg.png);
+
+    .contentBox {
+        display  : flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-top: 40px;
+    }
+
+    .navBox {
+        width: 986px;
+        .seachBox {
+            border-bottom: 1px solid #fff;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            float: right;
+            .seachInput {
+                background: none;
+                color: #fff;
+            }
+            .seachImg{width: 19px;height: auto;cursor: pointer;}
+        }
+        .navUl{
+            float: right;
+            margin-top: 18px;
+            align-self:flex-end;
+            margin-left: 50px;
+            li{
+                margin: 0 15px;
+                a{font-size: 22px;}
+            }
+            li:last-child{margin-right: 0;}
+        }
+
+    }
+}
+
+.navUl li a {
+    color    : #fff;
+    font-size: 20px;
+}

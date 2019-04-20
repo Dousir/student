@@ -1,24 +1,46 @@
 <template>
   <header class="header">
     <div class="contentBox cfff">
-      <ul class="navUl">
-        <li>
-          <router-link to='/'>Home</router-link>
-        </li>
-        <li>
-          <router-link to='/news'>news</router-link>
-        </li>
-      </ul>
+      <div class="logo">
+        <img src="@/assets/images/logo.png">
+      </div>
+      <div class="navBox">
+        <div class="seachBox">
+          <input type="text" class="seachInput" placeholder="seach" v-model="seachval">
+          <img class="seachImg"  src="@/assets/images/seachImg.png">
+        </div>
+        <ul class="navUl">
+          <li v-for="(item,key) in navlist" :key="key">
+            <router-link :to="item.urllinks">{{item.name}}</router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 </template>
 
 <script>
-import "../assets/css/header.css";
+import "../assets/css/header.less";
+const navlist = [
+  {urllinks:'/',name:'Home'},
+  {urllinks:'/',name:'Wei Yi'},
+  {urllinks:'/',name:'Members'},
+  {urllinks:'/',name:'Research'},
+  {urllinks:'/',name:'Publications'},
+  {urllinks:'/',name:'Opportunities'},
+  {urllinks:'/',name:'Photos'},
+  {urllinks:'/news',name:'New'},
+];
 export default {
   name: "",
   props: {
     msg: String
+  },
+  data() {
+    return{
+       seachval:'',
+       navlist:navlist
+    }
   }
 };
 </script>
