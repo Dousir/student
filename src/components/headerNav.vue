@@ -23,7 +23,7 @@
 import "../assets/css/header.less";
 const navlist = [
   {urllinks:'/',name:'Home'},
-  {urllinks:'/',name:'Wei Yi'},
+  {urllinks:'/yiwei',name:'Wei Yi'},
   {urllinks:'/',name:'Members'},
   {urllinks:'/',name:'Research'},
   {urllinks:'/',name:'Publications'},

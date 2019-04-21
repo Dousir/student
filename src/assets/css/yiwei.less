@@ -1,0 +1,96 @@
+.yiweiBox {
+    display        : flex;
+    justify-content: space-around;
+    position       : relative;
+    align-items: flex-start;
+    .yiweiLeft {
+        width: 800px;
+
+        .yiweiUl {
+            .yiweili {
+                margin-bottom: 20px;
+                width        : 740px;
+                padding      : 20px;
+                background   : #fff;
+                border-radius: 5px;
+
+                .title {
+                    font-size    : 26px;
+                    font-weight  : bold;
+                    color        : #000;
+                    margin-bottom: 15px;
+                }
+
+                .main {
+                    ul {
+                        li {
+                            width              : 100%;
+                            margin-bottom      : 10px;
+                            padding-left       : 40px;
+                            background-image   : url('../images/more.png');
+                            background-repeat  : no-repeat;
+                            background-size    : 35px;
+                            background-position: -6px -6px;
+
+                            p {
+                                font-size      : 15px;
+                                color          : #333;
+                                text-decoration: none;
+
+                                .date {
+                                    font-size   : 16px;
+                                    color       : #000;
+                                    font-weight : bold;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .yiweiRight {
+        width   : 390px;
+        position: relative;
+
+        .userInfo {
+            position     : fixed;
+            top          : 236px;
+            width        : 390px;
+            height       : auto;
+            text-align   : center;
+            padding      : 43px 0 48px 0;
+            background   : #fff;
+            border-radius: 5px;
+
+            .userimgbox {
+                width           : 150px;
+                height          : 180px;
+                overflow        : hidden;
+                margin          : 0 auto;
+                display         : flex;
+                align-items     : center;
+                background-color: #505050;
+
+                .userimg {
+                    width : 100%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+
+            .p1 {
+                font-size  : 30px;
+                font-weight: bold;
+            }
+
+            .p2 {
+                font-size: 16px;
+                color    : #202020;
+            }
+        }
+    }
+
+}

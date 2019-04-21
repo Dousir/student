@@ -17,6 +17,11 @@ export default new Router({
       path: '/news',
       name: 'news',
       component: () => import('./views/news.vue')
+    },
+    {
+      path: '/yiwei',
+      name: 'yiwei',
+      component: () => import('./views/yiwei.vue')
     }
   ]
 })
